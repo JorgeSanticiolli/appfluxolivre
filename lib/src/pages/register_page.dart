@@ -1,8 +1,8 @@
 import 'package:app_fluxolivre/src/widget/input_login_widget.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget{
-  const LoginPage({super.key});
+class RegisterPage extends StatelessWidget{
+  const RegisterPage({super.key});
 
 
  @override
