@@ -29,14 +29,23 @@ class LoginPage extends StatelessWidget{
           const SizedBox(height: 30,),
           InputLoginWidget(
             icon: Icons.person_outline, 
-            hint: 'Usuário', 
+            hint: 'E-mail', 
             obscure: false),
+          InputLoginWidget(
+            icon: Icons.ballot, 
+            hint: 'Nome de Usuario', 
+            obscure: false
+          ),
           InputLoginWidget(
             icon: Icons.lock_outlined, 
             hint: 'Senha', 
             obscure: true
           ),
-          const SizedBox(height: 30,),
+          InputLoginWidget(
+            icon: Icons.lock_outlined, 
+            hint: 'Confirmar Senha', 
+            obscure: true
+          ),const SizedBox(height: 30,),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
               backgroundColor: const Color(0xFFAFAE24),
