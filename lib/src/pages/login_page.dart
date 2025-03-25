@@ -48,9 +48,22 @@ class LoginPage extends StatelessWidget{
             onPressed: (){
               Navigator.of(context).pushNamed('/home');
             }, 
-            child: const Text('acessar', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500, color: Color(0xff031c5f)),))
+            child: const Text('Acessar', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500, color: Color(0xff031c5f)),)),
+          const SizedBox(height: 30,),   
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xFFAFAE24),
+              minimumSize: Size(double.infinity,60),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(14)
+              )
+            ),
+            onPressed: (){
+              Navigator.of(context).pushNamed('/register');
+            }, 
+            child: const Text('Registrar', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500, color: Color(0xff031c5f)),))
                 ],
-          
+
                 ),
         ),
       ),
